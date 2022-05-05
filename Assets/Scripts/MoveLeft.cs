@@ -14,7 +14,7 @@ public class MoveLeft : MonoBehaviour
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
+    // Moves scene left. Destroys obstacles that leave game area. 
     void Update()
     {
         if (playerControllerScript.gameOver == false)
